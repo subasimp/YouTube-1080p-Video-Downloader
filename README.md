@@ -15,7 +15,7 @@ Before running this app, ensure that you have FFmpeg installed and added to your
 Installation & usage
 1. Clone this repository:
     ```bash
-    git clone [https://github.com/username/your-repo-name.git](https://github.com/username/your-repo-name.git)
+    git clone [https://github.com/subasimp/YouTube-1080p-Video-Downloader.git](https://github.com/subasimp/YouTube-1080p-Video-Downloader.git)
 
 2. Install dependencies
     pip install -r requirements.txt
