@@ -22,12 +22,12 @@ url = st.text_input("Enter Youtube Video URL: ",  placeholder="https://www.youtu
 if url:
     try:
         #load youtube
-        yt = YouTube(url, client='ANDROID')
+        yt = YouTube(url, use_oauth=True, allow_oauth_cache=True)
 
         # show video information
         col1, col2 = st.columns([1,2])
         with col1:
-            st.image(yt.thumbnail_url, use_container_width=True)
+            st.image(yt.thumbnail_url, width='content')
         with col2:
             st.subheader(yt.title)
             st.write(f"Views: {yt.views:,} views")
