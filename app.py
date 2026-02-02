@@ -22,7 +22,7 @@ url = st.text_input("Enter Youtube Video URL: ",  placeholder="https://www.youtu
 if url:
     try:
         #load youtube
-        yt = YouTube(url, use_oauth=True, allow_oauth_cache=True)
+        yt = YouTube(url, use_oauth=False, allow_oauth_cache=False)
 
         # show video information
         col1, col2 = st.columns([1,2])
